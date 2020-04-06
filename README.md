@@ -1,5 +1,5 @@
 # Leaf bounding boxes  
-Custom object detection with Yolov3 ([paper](https://pjreddie.com/media/files/papers/YOLOv3.pdf)), using [AlexeyAB's](https://github.com/AlexeyAB/darknet) framework. Training set consisted of 2898 annotated images, starting with the pre-trained `yolov3.weights`. 
+Custom object detection with Yolov3 ([paper](https://pjreddie.com/media/files/papers/YOLOv3.pdf)), using [AlexeyAB's](https://github.com/AlexeyAB/darknet) framework. Training set consisted of 2898 annotated images. Starting weights taken from `yolov3.weights`. 
 
 ## Installation 
 ```
@@ -16,10 +16,10 @@ To run the detector on a single image:
 
 ```
 $ cd darknet 
-$ ./darknet detector test custom/darknet.data custom/cfg/custom.cfg leaf.weights -ext_output my-image.jpg
+$ ./darknet detector test custom/darknet.data custom/cfg/custom.cfg /location/to/weights/custom_5000.weights -ext_output my-image.jpg
 ```
 To run the detector on an entire folder of images, create a .txt file containing the file locations of all the images. Ex. my-imgs.txt
 ```
-$ ./darknet detector test custom/darknet.data custom/cfg/custom.cfg leaf.weights -ext_output < my-imgs.txt > output.txt
+$ ./darknet detector test custom/darknet.data custom/cfg/custom.cfg /location/to/weights/custom_5000.weights -ext_output < my-imgs.txt > output.txt
 ```
 
