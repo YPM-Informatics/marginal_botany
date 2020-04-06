@@ -1,5 +1,5 @@
 # Leaf bounding boxes  
-Custom object detection with Yolov3 ([paper](https://pjreddie.com/media/files/papers/YOLOv3.pdf)), using [AlexeyAB's](https://github.com/AlexeyAB/darknet) framework. Trained on 2898 images, starting with the pre-trained `yolov3.weights`. 
+Custom object detection with Yolov3 ([paper](https://pjreddie.com/media/files/papers/YOLOv3.pdf)), using [AlexeyAB's](https://github.com/AlexeyAB/darknet) framework. Training set consisted of 2898 annotated images, starting with the pre-trained `yolov3.weights`. 
 
 ## Installation 
 ```
